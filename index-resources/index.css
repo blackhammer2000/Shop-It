@@ -23,6 +23,22 @@
   color: red;
 }
 
+.sub-header h5 {
+  position: relative;
+}
+
+.sub-header h5::after {
+  position: absolute;
+  content: "";
+  bottom: -0.5em;
+  left: -1.15em;
+  height: 2px;
+  width: 120%;
+  background-color: orangered;
+  animation: widthSlider 0.4s ease linear;
+  transition: animation 0.4s;
+}
+
 .grid-container {
   display: grid;
   place-items: center;
@@ -42,6 +58,7 @@
 .supermarket {
   display: grid;
   place-items: center;
+  border-radius: 5px;
 }
 
 .supermarket:hover {
@@ -73,6 +90,8 @@
   background-position: center;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  animation: fadeInLeft 2s ease-in;
+  transition: animation ease-in;
 }
 .naivas {
   grid-area: naivas;
@@ -81,14 +100,18 @@
   background-position: center;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  animation: fadeInTop 3s ease-in;
+  transition: animation ease-in;
 }
 .tuskys {
   grid-area: tuskys;
   background-image: url("../images/tuskys-live-2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  animation: fadeInBottom 3.5s ease-in;
+  transition: animation ease-in;
 }
 .carrefour {
   grid-area: carrefour;
@@ -97,6 +120,8 @@
   background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  animation: fadeInRight 2.5s ease-in;
+  transition: animation ease-in;
 }
 
 @keyframes fadeIn {
@@ -104,6 +129,73 @@
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes widthSlider {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    width: 100%;
+    background-color: red;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-800px) scale(0);
+    opacity: 0;
+    display: grid;
+  }
+
+  100% {
+    display: grid;
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    display: grid;
+    transform: translateX(800px) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    display: grid;
+
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    display: grid;
+    transform: translateY(-800px) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    display: grid;
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    display: grid;
+    transform: translateY(800px) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    display: grid;
+    transform: translateY(0px) scale(1);
     opacity: 1;
   }
 }
