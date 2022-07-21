@@ -1,0 +1,15 @@
+.sublinks li a {
+  color: black;
+}
+
+.sublinks li a:hover {
+  color: orange;
+}
+
+.main-body {
+  height: 70vh;
+}
+
+.logo img {
+  transform: scale(0.4);
+}
