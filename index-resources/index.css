@@ -10,6 +10,15 @@
   height: 70vh;
 }
 
+.height-10vh {
+  max-height: 20vh;
+  overflow-y: hidden;
+}
+
 .logo img {
   transform: scale(0.4);
+}
+
+.cta-buttons a:hover {
+  color: red;
 }
