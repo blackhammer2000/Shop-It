@@ -1,3 +1,56 @@
+body {
+  position: relative;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.welcome-section-container {
+  position: absolute;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.88);
+  top: 0;
+  left: 0;
+  background-image: url("../images/quickmart-live-1.jpg");
+  background-attachment: fixed;
+  background-blend-mode: color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -0.5em;
+}
+
+.welcome-section {
+  display: grid;
+  place-items: center;
+  height: auto;
+  width: 100%;
+  color: white;
+}
+
+.welcome-section h2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 4em;
+}
+
+.welcome-section span {
+  color: red;
+  animation: fadeInLeft 3s ease-in-out;
+  transition: animation 3s;
+}
+
+.welcome-section .to {
+  animation: fadeInRight 5s ease-in-out;
+  transition: anmation 5s;
+  color: white;
+}
+
+.welcome-section .welcome-logo {
+  animation: fadeInBottom 4s ease-in-out;
+  transition: animation 4s;
+}
+
 .sublinks li a {
   color: black;
 }
@@ -75,8 +128,8 @@
 .supermarket:hover .image {
   display: grid;
   cursor: pointer;
-  animation: fadeIn 0.5s ease-in;
-  transition: animation ease-in 0.5s;
+  animation: fadeIn 0.5s ease;
+  transition: animation 0.5s;
 }
 
 .supermarket img {
@@ -85,22 +138,22 @@
 
 .quickmart {
   grid-area: quickmart;
-  background-image: url("../images/quickmart-live-2.jpg");
+  background-image: url("../images/quickmart-live-3.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
-  animation: fadeInLeft 2s ease-in;
+  animation: fadeInLeft 6s ease-in;
   transition: animation ease-in;
 }
 .naivas {
   grid-area: naivas;
-  background-image: url("../images/naivas-live-2.jpg");
+  background-image: url("../images/naivas-live-1.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
-  animation: fadeInTop 3s ease-in;
+  animation: fadeInTop 5s ease-in;
   transition: animation ease-in;
 }
 .tuskys {
@@ -110,7 +163,7 @@
   background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
-  animation: fadeInBottom 3.5s ease-in;
+  animation: fadeInBottom 5.5s ease-in;
   transition: animation ease-in;
 }
 .carrefour {
@@ -120,7 +173,7 @@
   background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
-  animation: fadeInRight 2.5s ease-in;
+  animation: fadeInRight 4s ease-in;
   transition: animation ease-in;
 }
 
@@ -147,11 +200,9 @@
   0% {
     transform: translateX(-800px) scale(0);
     opacity: 0;
-    display: grid;
   }
 
   100% {
-    display: grid;
     transform: translateX(0px) scale(1);
     opacity: 1;
   }
@@ -159,14 +210,11 @@
 
 @keyframes fadeInRight {
   0% {
-    display: grid;
     transform: translateX(800px) scale(0);
     opacity: 0;
   }
 
   100% {
-    display: grid;
-
     transform: translateX(0px) scale(1);
     opacity: 1;
   }
@@ -174,13 +222,11 @@
 
 @keyframes fadeInTop {
   0% {
-    display: grid;
     transform: translateY(-800px) scale(0);
     opacity: 0;
   }
 
   100% {
-    display: grid;
     transform: translateY(0px) scale(1);
     opacity: 1;
   }
@@ -188,14 +234,22 @@
 
 @keyframes fadeInBottom {
   0% {
-    display: grid;
     transform: translateY(800px) scale(0);
     opacity: 0;
   }
 
   100% {
-    display: grid;
     transform: translateY(0px) scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
