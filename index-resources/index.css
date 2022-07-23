@@ -9,7 +9,7 @@ body {
   display: grid;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.78);
   top: 0;
   left: 0;
   background-image: url("../images/quickmart-live-1.jpg");
@@ -57,10 +57,6 @@ body {
 
 .sublinks li a:hover {
   color: orange;
-}
-
-.main-body {
-  height: 70vh;
 }
 
 .height-10vh {
@@ -115,14 +111,19 @@ body {
 }
 
 .supermarket:hover {
-  transition: transform ease-in-out 0.3s;
-  background-color: rgba(0, 0, 0, 0.9);
-  background-blend-mode: color;
   transform: scale(1.015);
+  transition: transform ease-in-out 0.3s;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
 }
 
 .supermarket .image {
   display: none;
+}
+
+.supermarket img {
+  transform: scale(0.6);
 }
 
 .supermarket:hover .image {
@@ -132,10 +133,6 @@ body {
   transition: animation 0.5s;
 }
 
-.supermarket img {
-  transform: scale(0.6);
-}
-
 .quickmart {
   grid-area: quickmart;
   background-image: url("../images/quickmart-live-3.png");
@@ -143,8 +140,8 @@ body {
   background-position: top;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
-  animation: fadeInLeft 6s ease-in;
-  transition: animation ease-in;
+  animation: fadeInLeft 6s ease-in-out;
+  transition: animation ease-in-out;
 }
 .naivas {
   grid-area: naivas;
@@ -175,6 +172,60 @@ body {
   background-blend-mode: color;
   animation: fadeInRight 4s ease-in;
   transition: animation ease-in;
+}
+
+footer li a {
+  transition: font-weight 0.1s ease-in-out;
+  padding: 0.4em;
+}
+
+footer li a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer img {
+  width: 120px;
+}
+
+.company-summary {
+  width: 33.3%;
+}
+
+.important-details {
+  width: 33.3%;
+}
+
+.utilities {
+  width: 33.3%;
+}
+
+.utilities li a,
+.important-details li a {
+  color: black;
+}
+
+.utilities ul {
+  width: 80%;
+}
+
+.social-links ul {
+  border-radius: 10px;
+}
+
+.social-links i:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 3px 3px 3px rgba(141, 11, 11, 0.6);
+}
+
+.social-links .blue i:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px rgba(0, 255, 255, 0.575);
+}
+
+footer li {
+  font-style: italic;
+  list-style: none;
 }
 
 @keyframes fadeIn {
