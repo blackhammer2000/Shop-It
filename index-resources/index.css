@@ -55,6 +55,39 @@ body {
   transition: animation 4s;
 }
 
+.account-details {
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.show-dropdown {
+  display: grid;
+}
+.account-details-dropdown {
+  position: absolute;
+  top: 6.5%;
+  right: 10%;
+  display: none;
+  place-items: center;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.account-details-dropdown a {
+  text-decoration: none;
+  color: white;
+}
+
+.account-details-dropdown a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.account-details:hover .account-details-dropdown {
+  display: flex;
+}
+
 .z-index-2 {
   z-index: 2;
 }

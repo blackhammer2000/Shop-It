@@ -61,11 +61,12 @@
         <div class="cta-buttons">
           <div class="container-fluid d-md-flex">
             <ul class="d-md-flex list-unstyled">
-              <li class="mx-md-3">
-                <a class="text-dark" href="#"
-                  ><i class="fa fa-user fa-lg"></i> My Account
-                  <i class="fa fa-arrow-down"></i
-                ></a>
+              <li
+                data-account-details
+                class="mx-md-3 text-dark account-details"
+              ></li>
+                <i class="fa fa-user fa-lg"></i> My Account
+                <i class="fa fa-arrow-down"></i>
               </li>
               <li class="mx-md-3">
                 <a class="text-dark" href="#"
@@ -199,6 +200,9 @@
           </footer>
         </div>
       </div>
+
+      <!-- absolute index-page components -->
+      <!-- 1. The welcome section -->
       <div
         data-welcome-section-container
         class="container-fluid justify-content-md-center align-items-md-center welcome-section-container p-0"
@@ -219,6 +223,20 @@
             />
           </div>
         </div>
+      </div>
+
+      <!-- 2. The account details dropdown  -->
+      <div
+        data-account-details-dropdown
+        class="account-details-dropdown border p-md-2 bg-dark"
+      >
+        <ul class="list-unstyled">
+          <li><a class="my-md-1" href="">Orders</a></li>
+          <li><a class="" href="">Favorite</a></li>
+          <li><a class="my-md-1" href="">New</a></li>
+          <li><a class="" href="">Feedback</a></li>
+          <li><a class="my-md-1" href="">Log out</a></li>
+        </ul>
       </div>
     </div>
   </body>

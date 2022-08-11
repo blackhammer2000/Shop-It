@@ -7,6 +7,16 @@ setTimeout(() => {
   welcomeSectionContainer.style.transition = "opacity ease 4s";
 }, 3000);
 
+const accountDetails = document.querySelector("[data-account-details]");
+const accountDetailsDropdown = document.querySelector(
+  "[data-account-details-dropdown]"
+);
+
+accountDetails.addEventListener("click", () => {
+  console.log(accountDetailsDropdown);
+  accountDetailsDropdown.classList.toggle("show-dropdown");
+});
+
 // const supermarkets = document.querySelectorAll(".supermarket");
 
 // supermarkets.forEach((supermarket) => {
