@@ -12,10 +12,21 @@ const accountDetailsDropdown = document.querySelector(
   "[data-account-details-dropdown]"
 );
 
-accountDetails.addEventListener("click", () => {
-  console.log(accountDetailsDropdown);
-  accountDetailsDropdown.classList.toggle("show-dropdown");
-});
+// accountDetails.addEventListener("click", (e) => {
+//   if (
+//     e.target.parentElement.parentElement.parentElement.classList.contains(
+//       "account-details"
+//     )
+//   ) {
+//     console.log(
+//       e.target.parentElement.parentElement.parentElement.parentElement
+//         .parentElement.parentElement.children[5]
+//     );
+//     e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[5].classList.toggle(
+//       "show"
+//     );
+//   }
+// });
 
 // const supermarkets = document.querySelectorAll(".supermarket");
 

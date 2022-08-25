@@ -55,23 +55,41 @@ body {
   transition: animation 4s;
 }
 
+.profile-image {
+  position: relative;
+}
+
+.profile-image::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 40%;
+  height: 40%;
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
 .account-details {
   position: relative;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
+  cursor: pointer;
 }
 
-.show-dropdown {
+.show {
   display: grid;
 }
 .account-details-dropdown {
   position: absolute;
-  top: 6.5%;
-  right: 10%;
-  display: none;
-  place-items: center;
+  top: 6%;
+  right: 6%;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .account-details-dropdown a {
@@ -85,7 +103,7 @@ body {
 }
 
 .account-details:hover .account-details-dropdown {
-  display: flex;
+  display: grid;
 }
 
 .z-index-2 {

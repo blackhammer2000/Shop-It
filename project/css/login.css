@@ -1,0 +1,458 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width:100%;
+    height: 75px;
+    margin: auto;
+    background-color:rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative; 
+    
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+
+}
+.logo{
+    color:#ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 80px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 600px;
+    float:right;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:#ff7200;
+}
+.menu p{
+    color:#fff;
+    text-align: right;
+    font-size: 15px;
+    font-family: arial;
+
+}
+.sign{
+    width: 100px;
+    height:30px;
+    background:#ff7200;
+    border:none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #000;
+    position: relative;
+}
+.par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    line-height: 18px;
+    font-size: 15px;
+    margin-top: 15px;
+    color: #ff7200;
+
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 6%;
+    letter-spacing: 1px;
+
+
+}.content .cn{
+    width: 160px;
+    height:40px;
+    background:#ff7200;
+    border:none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: red;
+}
+.content span{
+    color: #ff7200;
+    font-size: 65px;
+}
+
+.form{
+    width: 300px;
+    height:400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 200px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height:35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color:white;
+    font-family:Arial;
+}
+#btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    padding-left: 2px;
+    margin-left: 50px;
+}
+#btn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+#btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.btn{
+    width: 120px;
+    height: 30px;
+    background: #ff7200;
+    border: none;
+    margin-top: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    padding-left: 2px;
+    margin-left: 48px;
+}
+.btn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.link{
+    font-family: Arial,Halvetica,sans-serif;
+    font-size:15px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+.link a{
+    text-decoration: none;
+    color:#ff7200;
+}
+.liw{
+    padding-top: 2px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial,Halvetica,sans-serif;
+    font-size:17px;
+
+}
+.process{
+    position: relative;
+    background: white;
+    margin-top: 4%;
+
+}
+.process h2{
+    font-family: Arial;
+    font-size: 15px;
+    padding-left:40px;
+    padding-top:5px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+
+   
+}
+.process span{
+    color: #ff7200;
+    font-size: 25px;
+    color: #ff7200;
+}
+.form-box{
+    width: 400px;
+    height:520px;
+    background: linear-gradient(to top,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%);
+    position: absolute;
+    top: 120px;
+    left: 470px;
+    border-radius: 10px;
+    padding: 35px;
+    margin-left: 157px;
+}
+.form-box h2{
+    width: 300px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form-box input{
+    width: 340px;
+    height:35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.or{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin: 15px 0 20px;
+}
+.line{
+    width: 105px;
+    height: 2px;
+    background: #efefef
+}
+
+.or p{
+    color: #fff;
+    font-size: 12px;
+}
+
+.fb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb img{
+    width: 16px;
+    height: 16px;
+}
+
+.fb a{
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: Arial,Halvetica,sans-serif;
+}
+.fb a:hover{
+    color:#ff7200;
+}
+
+.forgot{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot a{
+    color:red;
+    font-size: 13px;
+    font-family: Arial,Halvetica,sans-serif;
+    text-decoration: none;
+}
+.apps a img{
+    width: 135px;
+    height: 40px;
+    margin: 0 10px;
+}
+.linka{
+    font-family: Arial,Halvetica,sans-serif;
+    font-size:17px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+.linka a{
+    text-decoration: none;
+    color:#ff7200;
+}
+.liwa{
+    padding-top: 2px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial,Halvetica,sans-serif;
+    font-size:17px;
+
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  padding-top: 5px;
+  height: 250px; /*Should be removed. Only for demonstration */
+  text-align: left;
+padding-left: 55px;
+
+}
+.column p{
+width: 100%px;
+text-decoration: none;
+font-family: Arial;
+font-size: 14px;
+text-align: left;
+padding-top: 5px;
+
+
+}
+.row h2{
+width: 100%px;
+text-decoration: none;
+font-family: Arial;
+font-size: 14px;
+text-align: left;
+padding-top: 5px;
+padding: 0px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.icons{
+    padding-left: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ff7200;
+}
+.shop-button{
+    width: 340px;
+    height: 30px;
+    background: #ff7200;
+    border: none;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    padding-left: 2px;
+    margin-left: 108px;
+}
+
+#shop-button ul{
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+#shop-button ul li{
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+#shop-button ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+#shop ul li a:hover{
+    color:#ff7200;
+}
+
